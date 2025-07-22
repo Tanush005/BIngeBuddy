@@ -97,7 +97,7 @@ Streamlit app is stateless and cloud-ready
 Compatible with Google Cloud Run or Streamlit Cloud
 
 🎯 Engineering Highlights
-✅ <10ms Latency: Engineered for near-instant recommendations
+✅ <20ms Latency: Engineered for near-instant recommendations
 
 ✅ Robust Error Handling: API fallback, response validation, user-side alerts
 
