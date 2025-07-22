@@ -51,67 +51,43 @@ Traditional recommendation systems often rely on rigid keyword matching or overf
 User Interface (Frontend)
 
 Built with Streamlit, enhanced using HTML/CSS for custom layouts
-
 Accepts natural language movie queries from users
-
 Displays ranked recommendations and contextual details
-
-Backend Logic (Python)
-
-Orchestrates the entire recommendation workflow
 
 Structured into three main stages:
 
 Query Understanding
-
 Recommendation Generation
-
 Content Enrichment
 
 Query Understanding
-
 Uses Google Gemini API to semantically interpret the user's intent
-
 Parses mood, genre, comparison, or vague inputs into structured criteria
-
 Search Pipeline
 
 Stage 1: Fuzzy Matching
-
 Uses TheFuzz (fuzzy string matching) to shortlist candidates quickly
-
 Corrects typos or vague titles (e.g., "Advntrs" → "The Avengers")
 
 Stage 2: Gemini Disambiguation
-
 Feeds top matches to Gemini API for context-aware ranking
-
 Returns the best-fit movie based on the user query
 
 Recommendation Engine
 
 Computes similarity using a TF-IDF vectorized matrix of movie overviews
-
 Similarities computed using Cosine Similarity (Scikit-learn)
-
 Optimized with pre-computed matrix for real-time inference
 
 Performance Optimization
 
 Implements strategic caching and batched Gemini API calls
-
 Reduces API load from O(N) to O(1) per recommendation request
-
 Achieves average latency under 20 milliseconds
-
 Content Enrichment & Display
-
 Enhances movie cards with poster images, genres, and tagline metadata
-
 Uses contextual cues from Gemini to provide “AI Vibe” annotations
-
 Results rendered as interactive cards on the frontend
-
 Deployment & Scalability
 
 Designed for containerization via Docker
@@ -122,9 +98,13 @@ Compatible with Google Cloud Run or Streamlit Cloud
 
 🎯 Engineering Highlights
 ✅ <10ms Latency: Engineered for near-instant recommendations
+
 ✅ Robust Error Handling: API fallback, response validation, user-side alerts
+
 ✅ Scalable & Extensible: Add new models or features with minimal refactoring
+
 ✅ Cloud-Ready: Compatible with Docker / Google Cloud Run for production deployment
+
 ✅ SDE Mindset: Clean modular code, system-level thinking, and emphasis on UX + performance
 
 🔮 Future Enhancements
