@@ -2,7 +2,8 @@
 
 > An intelligent, full-stack movie recommendation system engineered to eliminate the "endless scroll" problem using conversational AI and scalable backend design.
 
-![BingeBuddy Banner](path-to-your-banner-image-or-GIF) <!-- Replace with actual path -->
+<img width="2806" height="1479" alt="image" src="https://github.com/user-attachments/assets/e37f6fc7-213d-4757-9938-aa2c1e05f725" />
+
 
 ---
 
